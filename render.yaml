@@ -1,7 +1,7 @@
 services:
   - type: web
     name: calculator-be
-    runtime: java
+    env: java
     rootDir: CalculatorBE
     buildCommand: ./mvnw clean package -DskipTests
     startCommand: java -jar target/*.jar
